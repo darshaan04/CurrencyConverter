@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Exchange</title>
+        <link rel="stylesheet" href="CurrConv.css">
+    </head>
+    <body>
+        <div class="CurrEx">
+            <div class="main">
+                <h1>Currency Exchange</h1>
+                <div class="dropdown">
+                    <div id="from">
+                        <p>FROM:</p>
+                        <div>
+                            <img src="https://flagsapi.com/US/flat/64.png">
+                            <select name="from" id="frdr">
+                            </select>
+                        </div>
+                    </div>
+                    <div id="to">
+                        <p>TO:</p>
+                        <div>
+                            <img src="https://flagsapi.com/IN/flat/64.png">
+                            <select name="to" id="trdr">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <h3>Amount:</h3>
+                <input type="number">
+                <button type="button">Generate Exchange rate</button>
+                <div id="result"></div>
+            </div>
+        </div>
+        <script src="CountryList.js"></script>
+        <script src="CurrConv.js"></script>
+    </body>
+</html>
